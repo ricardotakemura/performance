@@ -10,8 +10,8 @@ import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
 import com.sensedia.performance.Busca;
-import com.sensedia.performance.impl.BuscaPorHash;
-import com.sensedia.performance.impl.BuscaPorStream;
+import com.sensedia.performance.impl.BuscaPorHashImpl;
+import com.sensedia.performance.impl.BuscaPorStreamImpl;
 import com.sensedia.performance.impl.Usuario;
 
 @RunWith(Parameterized.class)
@@ -25,7 +25,7 @@ public class BuscaTest {
 	
 	@Parameters
 	public static List<Busca<String, Usuario>> obterParametro() {
-		return Arrays.asList(new BuscaPorHash<String, Usuario>(), new BuscaPorStream<String, Usuario>());
+		return Arrays.asList(new BuscaPorHashImpl<String, Usuario>(), new BuscaPorStreamImpl<String, Usuario>());
 	}
 
 	@Test

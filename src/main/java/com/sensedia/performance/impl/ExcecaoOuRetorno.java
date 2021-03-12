@@ -1,4 +1,4 @@
-package com.sensedia.performance;
+package com.sensedia.performance.impl;
 
 public final class ExcecaoOuRetorno {
 

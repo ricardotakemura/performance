@@ -6,11 +6,11 @@ import java.util.Map;
 import com.sensedia.performance.Busca;
 import com.sensedia.performance.Buscavel;
 
-public class BuscaPorHash<K,V extends Buscavel<K, V>> implements Busca<K, V> {
+public class BuscaPorHashImpl<K,V extends Buscavel<K, V>> implements Busca<K, V> {
 	
 	private Map<K,V> valores;
 	
-	public BuscaPorHash() {
+	public BuscaPorHashImpl() {
 		valores = new HashMap<K, V>();
 	}
 

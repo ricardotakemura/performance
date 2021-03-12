@@ -3,7 +3,7 @@ package com.sensedia.performance.util;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.sensedia.performance.ExcecaoOuRetorno;
+import com.sensedia.performance.impl.ExcecaoOuRetorno;
 
 public class ExcecaoOuRetornoTest {
 

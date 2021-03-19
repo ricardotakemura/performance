@@ -5,7 +5,7 @@ import com.sensedia.performance.ConcatenarString;
 public class ConcatenarStringComFormat implements ConcatenarString {
 
 	public String concatenar(String s1, String s2) {
-		return s1 + s2;
+		return String.format("%s%s", s1, s2);
 	}
 	
 	@Override

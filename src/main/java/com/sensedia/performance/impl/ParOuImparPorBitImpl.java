@@ -4,8 +4,8 @@ import com.sensedia.performance.ParOuImpar;
 
 public class ParOuImparPorBitImpl implements ParOuImpar {
 
-	public boolean ehPar(int number) {
-		return (number & 1) == 0;
+	public boolean ehPar(int numero) {
+		return (numero & 1) == 0;
 	}
 
 	@Override

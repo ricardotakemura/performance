@@ -15,7 +15,7 @@ import com.sensedia.performance.impl.FatorialComRecursaoImpl;
 
 @RunWith(Parameterized.class)
 public class FatorialTest {
-	
+
 	private Fatorial fatorial;
 	
 	public FatorialTest(Fatorial fatorial) {
@@ -30,7 +30,7 @@ public class FatorialTest {
 	@Test
 	public void testeDePerformance() {
 		final long inicio = System.currentTimeMillis();
-		for (int i = 0; i < Integer.MAX_VALUE; i++) {
+		for (int i = 0; i < 100000000; i++) {
 			Assert.assertEquals(3628800, fatorial.fatorial(10));
 		}
 		final long fim = System.currentTimeMillis();

@@ -4,8 +4,8 @@ import com.sensedia.performance.ParOuImpar;
 
 public class ParOuImparPorModuloImpl implements ParOuImpar {
 
-	public boolean ehPar(int number) {
-		return number % 2 == 0;
+	public boolean ehPar(int numero) {
+		return numero % 2 == 0;
 	}
 
 	@Override

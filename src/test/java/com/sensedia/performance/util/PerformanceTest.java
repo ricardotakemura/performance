@@ -45,7 +45,7 @@ public class PerformanceTest {
 	public void test3LinearComplexity() {
 		final long inicio = System.currentTimeMillis();
 		for (int i = 0; i < MAX_VALUE; i++) {
-			Assert.assertEquals(34, Performance.average(ARRAY));
+			Assert.assertTrue(Performance.isPrimeNumber(19));
 		}
 		final long fim = System.currentTimeMillis();
 		System.out.printf( "Linear complexity. Time: %dms\n", fim - inicio);

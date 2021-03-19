@@ -18,12 +18,17 @@ public final class Performance {
 		return -1;
 	}
 
-	public static int average(int[] array) {
-		int sum = 0;
-		for (int i = 0; i < array.length; i++) {
-			sum += array[i];
+	public static boolean isPrimeNumber(int number) {
+		if (number < 1) {
+			return false;
 		}
-		return sum / array.length;
+		int count = 0;
+		for (int i = 1; i < number; i++) {
+			if (number % i == 0) {
+				count++;
+			}
+		}
+		return count < 3;
 	}
 
 	public static void bubbleSort(int[] array) {

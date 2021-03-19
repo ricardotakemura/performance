@@ -16,7 +16,7 @@ import com.sensedia.performance.impl.Usuario;
 
 @RunWith(Parameterized.class)
 public class BuscaTest {
-	
+
 	private Busca<String, Usuario> busca;
 	
 	public BuscaTest(Busca<String, Usuario> busca) {
@@ -41,7 +41,7 @@ public class BuscaTest {
 	@Test
 	public void teste2DePerformanceBuscar() {
 		final long inicio = System.currentTimeMillis();
-		for (int i = 99999; i > -1; i--) {
+		for (int i = 10000; i > -1; i--) {
 			Assert.assertEquals(new Usuario("andre_" + i, "senha" + i), busca.buscar("andre_" + i));
 		}
 		final long fim = System.currentTimeMillis();

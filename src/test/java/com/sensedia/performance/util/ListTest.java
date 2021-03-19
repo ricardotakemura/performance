@@ -2,7 +2,6 @@ package com.sensedia.performance.util;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Vector;
@@ -18,6 +17,8 @@ import org.junit.runners.Parameterized.Parameters;
 @RunWith(Parameterized.class)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class ListTest {
+
+	private static final int MAX_VALUE = 1000000;
 	
 	public List<Integer> lista;
 	
@@ -33,7 +34,7 @@ public class ListTest {
 	@Test
 	public void test1DePerformanceInsercao() {
 		final long inicio = System.currentTimeMillis();
-		for (int i = 10000000; i > 0; i--) {
+		for (int i = MAX_VALUE; i > 0; i--) {
 			Assert.assertTrue(lista.add(i));
 		}
 		final long fim = System.currentTimeMillis();
@@ -43,9 +44,9 @@ public class ListTest {
 	@Test
 	public void test2DePerformanceListagem() {
 		final long inicio = System.currentTimeMillis();
-		Integer value = 10000000;
-		for (Iterator<Integer> i = lista.iterator(); i.hasNext();) { 
-			Assert.assertEquals(value, i.next());
+		Integer value = MAX_VALUE;
+		for (Integer i: lista) { 
+			Assert.assertEquals(value, i);
 			value--;
 		}
 		final long fim = System.currentTimeMillis();
@@ -56,7 +57,7 @@ public class ListTest {
 	public void test3DePerformanceBusca() {
 		final long inicio = System.currentTimeMillis();
 		for (Integer i = 100000; i > 0; i--) {
-			Assert.assertEquals(i, lista.get(10000000 - i));
+			Assert.assertEquals(i, lista.get(MAX_VALUE - i));
 		}		
 		final long fim = System.currentTimeMillis();
 		System.out.printf("Teste de busca na classe %s. Tempo de execucao: %dms\n", lista.getClass().getName(), fim - inicio);
@@ -65,7 +66,7 @@ public class ListTest {
 	@Test
 	public void test4DePerformanceRemover() {
 		final long inicio = System.currentTimeMillis();
-		for (Integer i = 100; i > 0; i--) {
+		for (Integer i = 1000; i > 0; i--) {
 			Assert.assertTrue(lista.remove(i));
 		}	
 		final long fim = System.currentTimeMillis();

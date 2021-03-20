@@ -23,7 +23,7 @@ public class ExcecaoOuRetornoTest {
 			} catch (Exception e) {}
 		}
 		final long fim = System.currentTimeMillis();
-		System.out.printf("testeComExcecao. Tempo de execucao: %dms\n", fim - inicio);		
+		System.out.printf("testeDePerformanceComExcecao. Tempo de execucao: %dms\n", fim - inicio);		
 	}
 
 	@Test
@@ -35,7 +35,7 @@ public class ExcecaoOuRetornoTest {
 			}
 		}
 		final long fim = System.currentTimeMillis();
-		System.out.printf("testeComRetorno. Tempo de execucao: %dms\n", fim - inicio);		
+		System.out.printf("testeDePerformanceComRetorno. Tempo de execucao: %dms\n", fim - inicio);		
 	}
 
 }

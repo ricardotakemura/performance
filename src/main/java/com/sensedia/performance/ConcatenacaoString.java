@@ -1,6 +1,6 @@
 package com.sensedia.performance;
 
-public interface ConcatenarString {
+public interface ConcatenacaoString {
 
 	public String concatenar(String s1, String s2);
 

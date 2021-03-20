@@ -1,8 +1,8 @@
 package com.sensedia.performance.impl;
 
-import com.sensedia.performance.ConcatenarString;
+import com.sensedia.performance.ConcatenacaoString;
 
-public class ConcatenarStringComFormat implements ConcatenarString {
+public class ConcatenacaoStringComFormatImpl implements ConcatenacaoString {
 
 	public String concatenar(String s1, String s2) {
 		return String.format("%s%s", s1, s2);

@@ -1,8 +1,8 @@
 package com.sensedia.performance.impl;
 
-import com.sensedia.performance.ConcatenarString;
+import com.sensedia.performance.ConcatenacaoString;
 
-public class ConcatenarStringComStringBuilder implements ConcatenarString {
+public class ConcatenacaoStringComStringBuilderImpl implements ConcatenacaoString {
 
 	public String concatenar(String s1, String s2) {
 		return new StringBuilder(s1).append(s2).toString();

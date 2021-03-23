@@ -1,4 +1,4 @@
-package com.sensedia.performance.util;
+package com.sensedia.performance;
 
 import org.junit.Assert;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package com.sensedia.performance.util;
+package com.sensedia.performance;
 
 import java.util.ArrayList;
 import java.util.Arrays;

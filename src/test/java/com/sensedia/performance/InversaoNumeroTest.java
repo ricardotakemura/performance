@@ -9,7 +9,6 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
-import com.sensedia.performance.InversaoNumero;
 import com.sensedia.performance.impl.InversaoNumeroDivisaoImpl;
 import com.sensedia.performance.impl.InversaoNumeroStringBuilderImpl;
 import com.sensedia.performance.impl.InversaoNumeroStringImpl;

@@ -9,7 +9,6 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
-import com.sensedia.performance.ConcatenacaoString;
 import com.sensedia.performance.impl.ConcatenacaoStringComFormatImpl;
 import com.sensedia.performance.impl.ConcatenacaoStringComMaisImpl;
 import com.sensedia.performance.impl.ConcatenacaoStringComStringBuilderImpl;

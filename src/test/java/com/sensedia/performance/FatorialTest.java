@@ -9,7 +9,6 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
-import com.sensedia.performance.Fatorial;
 import com.sensedia.performance.impl.FatorialComForImpl;
 import com.sensedia.performance.impl.FatorialComRecursaoImpl;
 

@@ -9,7 +9,6 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
-import com.sensedia.performance.Busca;
 import com.sensedia.performance.impl.BuscaPorHashImpl;
 import com.sensedia.performance.impl.BuscaPorStreamImpl;
 import com.sensedia.performance.impl.Usuario;
